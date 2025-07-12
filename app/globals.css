@@ -1,4 +1,11 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  @apply bg-white text-black font-sans;
+}
 
 :root {
   --background: #ffffff;
@@ -23,4 +30,109 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+* {
+  font-family: cursive;
+}
+#profilePic {
+  filter: brightness(70%);
+}
+.typewriter-text {
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: 2px solid orange; */
+  width: 0;
+  font-size: 2rem;
+  margin: 50px 0;
+  opacity: 1;
+}
+
+.typewriter-text.animate {
+  animation: typing 3s steps(30, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes dot {
+  0% {
+    transform: translateY(0%);
+  }
+  5% {
+    transform: translateY(-5%);
+  }
+  10% {
+    transform: translateY(-10%);
+  }
+  15% {
+    transform: translateY(-15%);
+  }
+  20% {
+    transform: translateY(-20%);
+  }
+  25% {
+    transform: translateY(-25%);
+  }
+  30% {
+    transform: translateY(-30%);
+  }
+  35% {
+    transform: translateY(-35%);
+  }
+  40% {
+    transform: translateY(-40%);
+  }
+  45% {
+    transform: translateY(-45%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  55% {
+    transform: translateY(-55%);
+  }
+  60% {
+    transform: translateY(-60%);
+  }
+  65% {
+    transform: translateY(-65%);
+  }
+  70% {
+    transform: translateY(-70%);
+  }
+  75% {
+    transform: translateY(-75%);
+  }
+  80% {
+    transform: translateY(-80%);
+  }
+  85% {
+    transform: translateY(-85%);
+  }
+  90% {
+    transform: translateY(-90%);
+  }
+  95% {
+    transform: translateY(-95%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#dotted {
+  background-image: url("/images/projects/breadcrumb_shape05.png");
+  width: 10%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 20%;
+  animation: dot 4s ease-in-out infinite alternate;
+  position: relative;
+  will-change: transform;
 }
