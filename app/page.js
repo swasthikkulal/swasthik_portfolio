@@ -40,15 +40,14 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
         <div className="relative z-10 flex flex-col items-center overflow-visible">
-          <Image
-            id="profilePic"
+          <img
             src="/images/profile/sk.png"
             alt="Swasthik"
-            width={150}
-            height={150}
-            priority
-            className="rounded-full shadow-lg mb-4 z-[20]"
+            width="150"
+            height="150"
+            style={{ zIndex: 20, position: "relative", borderRadius: "9999px", marginBottom: "1rem" }}
           />
+
 
           <h1
             ref={ref}
