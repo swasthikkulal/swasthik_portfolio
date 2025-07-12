@@ -37,31 +37,38 @@ export default function Hero() {
         style={{ backgroundImage: "url('/images/hero/hero.png')" }}
         id="home"
       >
-
-
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-        <div className="relative z-10 flex flex-col items-center">
+        <div className="relative z-10 flex flex-col items-center overflow-visible">
           <Image
             id="profilePic"
             src="/images/profile/sk.png"
             alt="Swasthik"
             width={150}
             height={150}
-            className="rounded-full shadow-lg mb-4"
+            priority
+            className="rounded-full shadow-lg mb-4 z-[20]"
           />
 
-          <h1 ref={ref} className={`text-4xl font-bold mb-2 typewriter-text ${isVisible ? "animate" : ""}`}>Hey, I’m Swasthik</h1>
-          <p className="text-lg text-gray-200 max-w-xl ">
+          <h1
+            ref={ref}
+            className={`text-4xl font-bold mb-2 typewriter-text ${isVisible ? "animate" : ""
+              }`}
+          >
+            Hey, I’m Swasthik
+          </h1>
+          <p className="text-lg text-gray-200 max-w-xl">
             A Web Developer on a mission to turn caffeine into code and dreams into deploys.
           </p>
-          <button className="mt-6 bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-100 transition" onClick={handleProject}>
+          <button
+            className="mt-6 bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-100 transition"
+            onClick={handleProject}
+          >
             View Projects
           </button>
         </div>
-
-
       </section>
+
       <About />
 
       <Projects />
