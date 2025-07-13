@@ -34,7 +34,7 @@ const Projects = () => {
       >
         <div className="max-w-xl flex  p-4">
           <video
-            src="/videos/insta.mp4"
+            src="https://res.cloudinary.com/dbdr90zhu/video/upload/v1752388323/insta_ca4nmb.mp4"
             autoPlay
             muted
             loop
@@ -129,7 +129,7 @@ const Projects = () => {
         </div>
         <div className="max-w-xl   p-4">
           <video
-            src="/videos/shoes.mp4"
+            src="https://res.cloudinary.com/dbdr90zhu/video/upload/v1752390631/shoes_mx8i53.mp4"
             autoPlay
             muted
             loop
@@ -149,7 +149,7 @@ const Projects = () => {
       >
         <div className="max-w-xl flex  p-4">
           <video
-            src="/videos/pintrest.mp4"
+            src="https://res.cloudinary.com/dbdr90zhu/video/upload/v1752388751/pintrest_gyg1cu.mp4"
             autoPlay
             muted
             loop
